@@ -17,3 +17,8 @@ export def Errors(): string
 	var errors = lsp_diag_counts.Error
 	return errors > 0 ? $"E:{errors}" : ""
 enddef
+
+export def OK(): string
+	var total = lsp_diag_counts.Warn + lsp_diag_counts.Error
+	return total == 0 ? "OK" : ""
+enddef
