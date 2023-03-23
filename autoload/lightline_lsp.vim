@@ -8,9 +8,9 @@ export def UpdateErrorCounts()
 	lsp_diag_counts = lsp.ErrorCount()
 enddef
 
-export def Warns(): string
-	var warns = lsp_diag_counts.Warn
-	return warns > 0 ? $"W:{warns}" : ""
+export def Warnings(): string
+	var warnings = lsp_diag_counts.Warn
+	return warnings > 0 ? $"W:{warnings}" : ""
 enddef
 
 export def Errors(): string
