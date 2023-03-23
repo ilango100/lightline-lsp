@@ -10,7 +10,10 @@ Heavily inspired by [halkn/lightline-lsp](https://github.com/halkn/lightline-lsp
 
 Set `component_expand` for `warning`, `error` and `ok` components to the autoload functions and specify their types.
 For example,
+
 ```
+vim9script
+
 g:lightline = {
 	"active": {
 		"right": [
